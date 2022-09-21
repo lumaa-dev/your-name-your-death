@@ -4,9 +4,10 @@
   "package": "com.lumaa.ynyd.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "YnydEntityDataSaverMixin"
+    "LivingEntityMixin"
   ],
   "client": [
+    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

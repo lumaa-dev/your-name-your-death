@@ -15,16 +15,15 @@ repositories {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
+	// Minecraft
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+	// Fabric
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	// deprecated version
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 }
 
 processResources {
@@ -59,5 +58,6 @@ publishing {
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
+
 	}
 }
