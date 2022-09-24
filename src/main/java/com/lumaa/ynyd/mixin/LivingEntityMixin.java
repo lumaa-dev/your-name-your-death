@@ -43,7 +43,7 @@ public abstract class LivingEntityMixin extends Entity {
 
     public MinecraftServer server = getServer();
 
-    // works like a totem
+    // TODO: Fix dropping on death
     @Inject(at = @At("TAIL"), method = "tryUseTotem", cancellable = true)
     public void useLife(DamageSource source, CallbackInfoReturnable<Boolean> cir) {
         if (source.isOutOfWorld()) {
@@ -72,8 +72,6 @@ public abstract class LivingEntityMixin extends Entity {
                     return;
                 }
             }
-
-            cir.setReturnValue(false);
         }
     }
 
