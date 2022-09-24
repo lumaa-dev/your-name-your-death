@@ -14,7 +14,7 @@
     "sources": "https://github.com/u-lumaa/your-name-your-death"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/ynyd/icon.png",
 
   "environment": "*",
